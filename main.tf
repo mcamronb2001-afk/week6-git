@@ -3,7 +3,7 @@ resource "aws_lightsail_instance" "server1" {
     blueprint_id = "unbuntu_18_04"
     bundle_id = "medium_1_0"
     availability_zone = "us-east-1a"
-    user_data = << -EOF 
+    user_data = <<-EOF 
                 #!/bin/bash
                 sudo apt-get update
                 sudo apt-get install -y apache2
